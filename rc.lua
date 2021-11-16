@@ -396,11 +396,11 @@ clientkeys = gears.table.join(
 
      -- volume widget
     awful.key({}, 'XF86AudioRaiseVolume',
-    	volume_widget.raise,
+    	volume_widget.inc,
     	{description = 'volume up', group = 'hotkeys'}
     ),
     awful.key({}, 'XF86AudioLowerVolume',
-    	volume_widget.lower,
+    	volume_widget.dec,
     	{description = 'volume down', group = 'hotkeys'}
     ),
     awful.key({}, 'XF86AudioMute',
