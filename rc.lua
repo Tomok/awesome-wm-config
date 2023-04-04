@@ -232,6 +232,7 @@ awful.screen.connect_for_each_screen(function(s)
             battery_widget({
 	        display_notification = true,
 		margin_left = 5,
+		path_to_icons = os.getenv("HOME") .. "/.config/awesome/arc-icon-theme/Arc/status/symbolic",
        	    }),
             wibox.widget.systray(),
             mytextclock,
